@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sanchit Sinha - Portfolio</title>
+    <link rel="stylesheet" href="C:\Users\HP\Downloads\my-portfolio-main\style.css"/>
+    <script src="C:\Users\HP\Downloads\my-portfolio-main\script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Sanchit Sinha
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          gautamsinha0612@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +919504575899
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#Skills">Skills</a>
+          <a class="topmenu" href="#Projects">Projects</a>
+          <a class="topmenu" href="#Recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <a href="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif"></a><img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Sanchit Sinha! <a href="https://twemoji.maxcdn.com/2/72x72/1f44b.png"></a><img src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width="60px"/>
+          </h1>
+          <p>
+            I'm thrilled to be stepping into the captivating realm of Information Technology alongside all of you.
+            For me, IT isn't just about lines of code or digital puzzles; it's about unlocking the door to endless possibilities, where creativity meets functionality and every problem is an opportunity to innovate.
+          </p>
+          <br>
+          <p>Excited to be diving into the world of Information Technology with you all! From coding to cybersecurity to big data, I'm ready to explore it all. Let's collaborate, innovate, and make our mark on the tech landscape together!</p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="html_finalprojimages/java.png"/>
+            <h6>Java</h6>
+            
+          </div>
+        
+          <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            
+          </div>
+
+          <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node.js</h6>
+            
+          </div>
+
+          <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            
+          </div>
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Resume_Builder</h3>
+            <ul>
+              <li>In this Project an App is design to assist users in creating professional resumes easily and efficiently.</li>
+              <a href="https://github.com/sanchitsinha0612/onlineresumebuilder">Github Link</a>
+            </ul>
+          </div>
+          <hr>
+          <hr>
+          <div class="project-card">
+            <h3>SBPDCL Feedback Portal</h3>
+            <ul>
+              <li>This Project has been made by myself during my learning phase and as a newcomer in the IT field. in this project i have made the whole clone website of SBDCL(South Bihar Power Distribution Limited) during my intership period in the same company, which is government organisation of bihar .
+              </li>
+              <li>i have used HTML,CSS and JavaScript for front end and for backend i have used nodejs and tomcat as local server.</li>
+              
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Sanchit Sinha was an absolute pleasure. 
+          Their ability to seamlessly integrate frontend and backend technologies resulted in impressive and efficient applications.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I highly recommend Sanchit Sinha as a full stack developer. 
+          Their dedication to staying updated with the latest tech trends and their problem-solving skills are commendable.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          If you're looking for a versatile full stack developer, look no further than Sanchit Sinha. 
+          Their strong foundation in multiple languages and frameworks ensures top-notch development for any project.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
